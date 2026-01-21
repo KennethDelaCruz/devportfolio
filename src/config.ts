@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Kenneth Dela Cruz",
   title: "Software Engineer",
   description: "Portfolio website of Kenneth Dela Cruz",
-  accentColor: "#1d4ed8",
+  accentColor: "#266146",
   social: {
     email: "kennethbdelacruz@gmail.com",
     linkedin: "https://www.linkedin.com/in/kenneth-dela-cruz/",
@@ -25,32 +25,18 @@ export const siteConfig = {
   },
   projects: [
     {
-      name: "Wildfire Systems, Inc. Partner Relationship Managej",
+      name: "Smart Ticket Triage AI",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
+        "Automatically analyze and triage support tickets with AI-powered intent detection, urgency assessment, and recommended next steps.",
       link: "",
-      skills: ["React", "Node.js", "AWS"],
-    },
-    {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
-      description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
-    {
-      name: "ExtensionKit",
-      description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      skills: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Python", "FastAPI", "AI/ML (Hugging Face Inference API)"],
     },
   ],
   experience: [
     {
       company: "Wildfire Systems, Inc.",
       title: "Software Engineer - Product Team",
-      dateRange: "Jan 2022 - Dec 2025",
+      dateRange: "Jan 2025 - Dec 2025",
       bullets: [
         "Built scalable, configuration-driven, white-label Chrome extension interfaces using theming and YAML-based configuration, allowing rapid partner onboarding with minimal custom code.",
         "Developed end-to-end product features for matching, price comparison, and targeted advertising, supporting core revenue-generating workflows.",
@@ -61,6 +47,7 @@ export const siteConfig = {
     {
       company: "Wildfire Systems, Inc. ",
       title: "Software Engineer - Internal/Partner Tools Team",
+      dateRange: "Jan 2023 - Dec 2024",
       bullets: [
         "Owned development of internal and partner-facing analytics dashboards used across 20+ partner-deployed Chrome extensions, enabling teams to track commissions, sales, clicks, installs, and uninstalls for data-driven decision-making.",
         "Led a migration from legacy Redux patterns to Redux Toolkit, improving code consistency, maintainability, and development velocity.",
@@ -71,7 +58,7 @@ export const siteConfig = {
     {
       company: "Dray Alliance",
       title: "Full-Stack Software Engineer II",
-      dateRange: "Jan 2022 - Dec 2025",
+      dateRange: "Sep 2022 - Dec 2022 ",
       bullets: [
         "Owned end-to-end development of customer-facing web and mobile features for a freight marketplace using TypeScript, React, and React Native, supporting core shipper and driver workflows.",
         "Designed and implemented RESTful APIs and contributed to production reliability through code reviews, testing, and monitoring microservices with DataDog.",
