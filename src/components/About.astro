@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from "../config";
+const {languages, frontend, backend, tools, design, aboutMe2} = siteConfig.skills;
 ---
 
 <section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24">
@@ -20,19 +21,86 @@ import { siteConfig } from "../config";
 
       <div class="lg:col-span-8 space-y-8">
         <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
-          {siteConfig.aboutMe}
+          {siteConfig.aboutMe2.intro}
+        </p>
+        <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
+          {siteConfig.aboutMe2.background}
+        </p>
+        <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
+          {siteConfig.aboutMe2.today}
         </p>
 
-        <div class="pt-4">
-          <div class="flex flex-wrap gap-3">
-            {
-              siteConfig.skills.map((skill) => (
-                <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base md:text-lg font-medium hover:bg-gray-200 transition-colors duration-200">
-                  {skill}
-                </span>
-              ))
-            }
-          </div>
+        <div class="pt-4 space-y-4">
+          {languages.length > 0 && (
+            <div class="flex flex-col sm:flex-row sm:items-center lg:justify-start xl:justify-end gap-3 sm:gap-[18px]">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-900 uppercase tracking-wide whitespace-nowrap xl:text-right">Languages</h3>
+              <div class="flex flex-wrap gap-1.5 sm:gap-2 items-start sm:items-center" role="list" aria-label="Languages Skills">
+                {
+                  languages.map((skill) => (
+                    <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 text-white rounded-md sm:rounded-lg text-base sm:text-lg font-medium transition-all duration-300" style="background-color: #00555A" role="listitem">
+                      {skill}
+                    </span>
+                  ))
+                }
+              </div>
+            </div>
+          )}
+          {frontend.length > 0 && (
+            <div class="flex flex-col sm:flex-row sm:items-center lg:justify-start xl:justify-end gap-3 sm:gap-[18px]">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-900 uppercase tracking-wide whitespace-nowrap xl:text-right">Frontend</h3>
+              <div class="flex flex-wrap gap-1.5 sm:gap-2 items-start sm:items-center" role="list" aria-label="Frontend Skills">
+                {
+                  frontend.map((skill) => (
+                    <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 text-white rounded-md sm:rounded-lg text-base sm:text-lg font-medium transition-all duration-300" style="background-color: #00555A" role="listitem">
+                      {skill}
+                    </span>
+                  ))
+                }
+              </div>
+            </div>
+          )}
+          {backend.length > 0 && (
+            <div class="flex flex-col sm:flex-row sm:items-center lg:justify-start xl:justify-end gap-3 sm:gap-[18px]">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-900 uppercase tracking-wide whitespace-nowrap xl:text-right">Backend</h3>
+              <div class="flex flex-wrap gap-1.5 sm:gap-2 items-start sm:items-center" role="list" aria-label="Backend Skills">
+                {
+                  backend.map((skill) => (
+                    <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 text-white rounded-md sm:rounded-lg text-base sm:text-lg font-medium transition-all duration-300" style="background-color: #00555A" role="listitem">
+                      {skill}
+                    </span>
+                  ))
+                }
+              </div>
+            </div>
+          )}
+          {tools.length > 0 && (
+            <div class="flex flex-col sm:flex-row sm:items-center lg:justify-start xl:justify-end gap-3 sm:gap-[18px]">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-900 uppercase tracking-wide whitespace-nowrap xl:text-right">Tools</h3>
+              <div class="flex flex-wrap gap-1.5 sm:gap-2 items-start sm:items-center" role="list" aria-label="Tools Skills">
+                {
+                  tools.map((skill) => (
+                    <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 text-white rounded-md sm:rounded-lg text-base sm:text-lg font-medium transition-all duration-300" style="background-color: #00555A" role="listitem">
+                      {skill}
+                    </span>
+                  ))
+                }
+              </div>
+            </div>
+          )}
+          {design.length > 0 && (
+            <div class="flex flex-col sm:flex-row sm:items-center lg:justify-start xl:justify-end gap-3 sm:gap-[18px]">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-900 uppercase tracking-wide whitespace-nowrap xl:text-right">Designs & Collaborations</h3>
+              <div class="flex flex-wrap gap-1.5 sm:gap-2 items-start sm:items-center" role="list" aria-label="Design & Collaboration Skills">
+                {
+                  design.map((skill) => (
+                    <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 text-white rounded-md sm:rounded-lg text-base sm:text-lg font-medium transition-all duration-300" style="background-color: #00555A" role="listitem">
+                      {skill}
+                    </span>
+                  ))
+                }
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

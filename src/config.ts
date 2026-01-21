@@ -1,23 +1,34 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  name: "Kenneth Dela Cruz",
+  title: "Software Engineer",
+  description: "Portfolio website of Kenneth Dela Cruz",
   accentColor: "#1d4ed8",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "kennethbdelacruz@gmail.com",
+    linkedin: "https://www.linkedin.com/in/kenneth-dela-cruz/",
+    twitter: "",
+    github: "https://github.com/KennethDelaCruz",
+  },
+  aboutMe2: {
+    intro: "I’m a full-stack software engineer building frontend-heavy, production systems. My work centers on React and TypeScript, with experience across the stack—building backend services with Node.js, integrating REST APIs, and shipping data-driven products. At Wildfire Systems, I’ve owned analytics dashboards and browser extension features used across 20+ partner deployments, with a focus on performance, scalability, and clear data visualization.",
+    background: "My path into engineering started outside of traditional computer science. I come from an economics background, where my initial goal was to learn Python for data aggregation and analysis—work that eventually led me to fall in love with software development as a whole. That foundation continues to shape how I approach engineering problems, pushing me to think beyond isolated implementations and focus on the broader system.",
+    today: "Today, I prioritize clarity, reliability, and scalability in the code I write. I focus on building systems that are easy to reason about, safe to change, and able to grow as product and user needs evolve. I care deeply about making thoughtful tradeoffs that balance long-term maintainability with short-term velocity, while keeping both user experience and developer experience front and center. I strive to be the kind of engineer who can take ownership of ambiguous problems and deliver solutions that scale—technically and organizationally—over time."
   },
   aboutMe:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+  skills : {
+    "languages": ["TypeScript", "JavaScript (ES6+)", "Python"],
+    "frontend": ["React", "React Native", "Redux", "Tailwind CSS" ],
+    "backend": ["Node.js", "Express", "PostgreSQL"],
+    "tools": ["Git", "GitHub", "GitHub Actions", "Monorepos"],
+    "design": ["Figma", "Notion"]
+  },
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Wildfire Systems, Inc. Partner Relationship Managej",
       description:
         "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
+      link: "",
       skills: ["React", "Node.js", "AWS"],
     },
     {
@@ -37,56 +48,54 @@ export const siteConfig = {
   ],
   experience: [
     {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
+      company: "Wildfire Systems, Inc.",
+      title: "Software Engineer - Product Team",
+      dateRange: "Jan 2022 - Dec 2025",
       bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
+        "Built scalable, configuration-driven, white-label Chrome extension interfaces using theming and YAML-based configuration, allowing rapid partner onboarding with minimal custom code.",
+        "Developed end-to-end product features for matching, price comparison, and targeted advertising, supporting core revenue-generating workflows.",
+        "Designed and implemented a service-worker–based decision engine for Chrome extensions, using tokenization, fuzzy matching, and probabilistic scoring to determine when ads should be triggered or suppressed.",
+        "Implemented feature-flag–driven rollouts and experimentation to enable safer production releases and A/B testing of new functionality.",
       ],
     },
     {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
+      company: "Wildfire Systems, Inc. ",
+      title: "Software Engineer - Internal/Partner Tools Team",
       bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
+        "Owned development of internal and partner-facing analytics dashboards used across 20+ partner-deployed Chrome extensions, enabling teams to track commissions, sales, clicks, installs, and uninstalls for data-driven decision-making.",
+        "Led a migration from legacy Redux patterns to Redux Toolkit, improving code consistency, maintainability, and development velocity.",
+        "Expanded automated test coverage (unit, integration, and E2E) to reduce production regressions and improve release confidence.",
+        "Mentored junior engineers through code reviews, technical guidance, and onboarding support.",
+      ]
+    },
+    {
+      company: "Dray Alliance",
+      title: "Full-Stack Software Engineer II",
+      dateRange: "Jan 2022 - Dec 2025",
+      bullets: [
+        "Owned end-to-end development of customer-facing web and mobile features for a freight marketplace using TypeScript, React, and React Native, supporting core shipper and driver workflows.",
+        "Designed and implemented RESTful APIs and contributed to production reliability through code reviews, testing, and monitoring microservices with DataDog.",
       ],
     },
     {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
+      company: "Dray Alliance",
+      title: "Full-Stack Software Engineer",
+      dateRange: "Aug 2021 - Sep 2022",
       bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
+        "Developed new web and mobile features supporting marketplace functionality, including job discovery and workflow improvements.",
+        "Integrated frontend features with backend APIs while participating in code reviews and supporting production systems.",
+      ],
+    },
+    {
+      company: "LearningFuze",
+      title: "Teaching Assistant",
+      dateRange: "May 2021 - Jul 2021",
+      bullets: [
+        "Mentored 40+ students in JavaScript, HTML, CSS, React, and Node.js through after-hours support, code reviews, and one-on-one debugging sessions.",
+        "Provided technical guidance via Slack and Zoom, helping students understand core programming concepts, best practices, and problem-solving approaches.",
+        "Fostered a challenging but supportive learning environment by reinforcing curriculum concepts and supplementing instruction to help students progress more effectively.",
       ],
     },
   ],
-  education: [
-    {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
-    },
-  ],
+  education: [],
 };
