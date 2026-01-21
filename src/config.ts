@@ -3,6 +3,7 @@ export const siteConfig = {
   title: "Software Engineer",
   description: "Portfolio website of Kenneth Dela Cruz",
   accentColor: "#266146",
+  profilePicture: "/me.jpg", // Add your profile picture to the public folder
   social: {
     email: "kennethbdelacruz@gmail.com",
     linkedin: "https://www.linkedin.com/in/kenneth-dela-cruz/",
@@ -39,9 +40,9 @@ export const siteConfig = {
       dateRange: "Jan 2025 - Dec 2025",
       bullets: [
         "Built scalable, configuration-driven, white-label Chrome extension interfaces using theming and YAML-based configuration, allowing rapid partner onboarding with minimal custom code.",
-        "Developed end-to-end product features for matching, price comparison, and targeted advertising, supporting core revenue-generating workflows.",
-        "Designed and implemented a service-worker–based decision engine for Chrome extensions, using tokenization, fuzzy matching, and probabilistic scoring to determine when ads should be triggered or suppressed.",
-        "Implemented feature-flag–driven rollouts and experimentation to enable safer production releases and A/B testing of new functionality.",
+        "Developed end-to-end product features for matching, price comparison, and targeted advertising that directly supported core revenue workflows.",
+        "Designed and implemented a service-worker–based decision engine leveraging tokenization, fuzzy matching, and probabilistic scoring to intelligently trigger or suppress ads.",
+        "Introduced feature-flag–driven rollouts and A/B experimentation, improving release safety and enabling data-backed product decisions.",
       ],
     },
     {
@@ -49,10 +50,10 @@ export const siteConfig = {
       title: "Software Engineer - Internal/Partner Tools Team",
       dateRange: "Jan 2023 - Dec 2024",
       bullets: [
-        "Owned development of internal and partner-facing analytics dashboards used across 20+ partner-deployed Chrome extensions, enabling teams to track commissions, sales, clicks, installs, and uninstalls for data-driven decision-making.",
+        "Owned development of internal and partner-facing analytics dashboards supporting 20+ production Chrome extensions, tracking commissions, sales, clicks, installs, and uninstalls.",
         "Led a migration from legacy Redux patterns to Redux Toolkit, improving code consistency, maintainability, and development velocity.",
         "Expanded automated test coverage (unit, integration, and E2E) to reduce production regressions and improve release confidence.",
-        "Mentored junior engineers through code reviews, technical guidance, and onboarding support.",
+        "Mentored junior engineers through code reviews, onboarding, and technical guidance.",
       ]
     },
     {
@@ -60,8 +61,8 @@ export const siteConfig = {
       title: "Full-Stack Software Engineer II",
       dateRange: "Sep 2022 - Dec 2022 ",
       bullets: [
-        "Owned end-to-end development of customer-facing web and mobile features for a freight marketplace using TypeScript, React, and React Native, supporting core shipper and driver workflows.",
-        "Designed and implemented RESTful APIs and contributed to production reliability through code reviews, testing, and monitoring microservices with DataDog.",
+        "Owned end-to-end development of customer-facing web and mobile features for a freight marketplace using TypeScript, React, and React Native.",
+        "Designed and implemented RESTful APIs and contributed to production reliability through testing, monitoring, and observability with DataDog.",
       ],
     },
     {
@@ -69,8 +70,8 @@ export const siteConfig = {
       title: "Full-Stack Software Engineer",
       dateRange: "Aug 2021 - Sep 2022",
       bullets: [
-        "Developed new web and mobile features supporting marketplace functionality, including job discovery and workflow improvements.",
-        "Integrated frontend features with backend APIs while participating in code reviews and supporting production systems.",
+        "Developed web and mobile features supporting marketplace workflows, including job discovery and operational improvements.",
+        "Collaborated closely with backend services, participated in code reviews, and supported production systems.",
       ],
     },
     {
@@ -79,10 +80,22 @@ export const siteConfig = {
       dateRange: "May 2021 - Jul 2021",
       bullets: [
         "Mentored 40+ students in JavaScript, HTML, CSS, React, and Node.js through after-hours support, code reviews, and one-on-one debugging sessions.",
-        "Provided technical guidance via Slack and Zoom, helping students understand core programming concepts, best practices, and problem-solving approaches.",
-        "Fostered a challenging but supportive learning environment by reinforcing curriculum concepts and supplementing instruction to help students progress more effectively.",
+        "Provided technical guidance via Slack and Zoom, reinforcing best practices and core programming fundamentals.",
+        "Helped foster a rigorous but supportive learning environment to accelerate student growth.",
       ],
     },
   ],
-  education: [],
+  education: [ {
+    school: "LearningFuze",
+    degree: "Accelerated Web Development Programe",
+    dateRange: "Jan 2021 - Apr 2021",
+    achievements: [],
+  },
+  {
+    school: "California State University, Long Beach",
+    degree: "Bachelor of Arts in Economics",
+    dateRange: "2016 - 2018",
+    achievements: [],
+  },
+],
 };

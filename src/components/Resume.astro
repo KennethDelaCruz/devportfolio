@@ -1,0 +1,64 @@
+---
+import { siteConfig } from "../config";
+import resumeImage from '../images/Kenneth-Dela-Cruz-Resume.jpg';
+---
+
+<main class="min-h-screen bg-white pt-24 pb-12" data-astro-cid-ruvg6z4q="">
+  <div class="max-w-4xl mx-auto px-6 lg:px-8" data-astro-cid-ruvg6z4q="">
+    <div class="mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" data-astro-cid-ruvg6z4q="">
+      <h1 class="text-3xl font-bold text-gray-800" data-astro-cid-ruvg6z4q="">
+        Resume
+      </h1>
+      <div class="flex flex-wrap gap-3" data-astro-cid-ruvg6z4q="">
+        <a
+          href="/Kenneth-Dela-Cruz-Resume.pdf"
+          download="Kenneth-Dela-Cruz-Resume.pdf"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-[var(--accent-color)] text-white rounded-md hover:opacity-90 transition-opacity font-medium"
+          style={`--accent-color: ${siteConfig.accentColor}`}
+          data-astro-cid-ruvg6z4q=""
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            data-astro-cid-ruvg6z4q=""
+          >
+            <path
+              stroke="none"
+              d="M0 0h24v24H0z"
+              fill="none"
+              data-astro-cid-ruvg6z4q=""
+            />
+            <path
+              d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"
+              data-astro-cid-ruvg6z4q=""
+            />
+            <path
+              d="M7 11l5 5l5 -5"
+              data-astro-cid-ruvg6z4q=""
+            />
+            <path
+              d="M12 4v12"
+              data-astro-cid-ruvg6z4q=""
+            />
+          </svg>
+          Download PDF
+        </a>
+      </div>
+    </div>
+    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200" data-astro-cid-ruvg6z4q="">
+      <img
+        src={resumeImage.src}
+        alt={`${siteConfig.name} Resume`}
+        class="w-full h-auto border-0 rounded shadow-sm"
+        data-astro-cid-ruvg6z4q=""
+      />
+    </div>
+  </div>
+</main>

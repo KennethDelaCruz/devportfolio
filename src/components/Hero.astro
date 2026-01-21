@@ -1,5 +1,6 @@
 ---
 import { siteConfig } from "../config";
+import profileImage from "../images/me.jpg";
 ---
 
 <div
@@ -130,18 +131,28 @@ import { siteConfig } from "../config";
       stroke-width={0}></rect>
   </svg>
   <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
-    <div>
+    <div class='w-full'>
       <h2
         class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in"
       >
         Hello! 👋
       </h2>
       <h1
-        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
+        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200 flex items-center justify-between flex-wrap gap-4 md:gap-6 lg:gap-8"
       >
-        I'm <span style={{ color: siteConfig.accentColor }}
-          >{siteConfig.name}</span
-        >
+        <span>
+          I'm <span style={{ color: siteConfig.accentColor }}
+            >{siteConfig.name}</span
+          >
+        </span>
+        <div class="hidden md:block flex-shrink-0 animate-fade-in animation-delay-200 transition-all duration-500 ease-in-out opacity-0 md:opacity-100 md:mr-10 lg:mr-15 xl:mr-60">
+          <img 
+            src={profileImage.src} 
+            alt={`${siteConfig.name} profile picture`} 
+            class="md:w-44 md:h-44 lg:w-56 lg:h-56 xl:w-64 xl:h-64 rounded-full object-cover shadow-xl ring-4 ring-white/50 transition-all duration-500 ease-in-out" 
+            loading="eager"
+          /> 
+        </div>
       </h1>
       <p
         class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400"
