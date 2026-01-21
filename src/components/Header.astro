@@ -14,7 +14,15 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
     <ul class="flex items-center gap-8 justify-center">
       <li>
         <a
-          href="#about"
+          href="/#hero"
+          class="text-gray-700 hover:text-black transition-colors font-medium"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/#about"
           class="text-gray-700 hover:text-black transition-colors font-medium"
         >
           About
@@ -24,7 +32,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         hasProjects && (
           <li>
             <a
-              href="#projects"
+              href="/#projects"
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Projects
@@ -36,7 +44,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         hasExperience && (
           <li>
             <a
-              href="#experience"
+              href="/#experience"
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Experience
@@ -48,7 +56,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         hasEducation && (
           <li>
             <a
-              href="#education"
+              href="/#education"
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
               Education
@@ -77,6 +85,19 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
       header?.classList.remove("bg-white/80", "backdrop-blur-sm");
     }
   });
+
+  // Handle hash navigation when coming from another page
+  if (window.location.hash) {
+    window.addEventListener("load", () => {
+      const hash = window.location.hash;
+      const element = document.querySelector(hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    });
+  }
 </script>
 
 <style>
