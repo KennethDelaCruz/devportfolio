@@ -10,13 +10,11 @@ export const siteConfig = {
     twitter: "",
     github: "https://github.com/KennethDelaCruz",
   },
-  aboutMe2: {
+  aboutMe: {
     intro: "I’m a full-stack software engineer building frontend-heavy, production systems. My work centers on React and TypeScript, with experience across the stack—building backend services with Node.js, integrating REST APIs, and shipping data-driven products. At Wildfire Systems, I’ve owned analytics dashboards and browser extension features used across 20+ partner deployments, with a focus on performance, scalability, and clear data visualization.",
     background: "My path into engineering started outside of traditional computer science. I come from an economics background, where my initial goal was to learn Python for data aggregation and analysis—work that eventually led me to fall in love with software development as a whole. That foundation continues to shape how I approach engineering problems, pushing me to think beyond isolated implementations and focus on the broader system.",
     today: "Today, I prioritize clarity, reliability, and scalability in the code I write. I focus on building systems that are easy to reason about, safe to change, and able to grow as product and user needs evolve. I care deeply about making thoughtful tradeoffs that balance long-term maintainability with short-term velocity, while keeping both user experience and developer experience front and center. I strive to be the kind of engineer who can take ownership of ambiguous problems and deliver solutions that scale—technically and organizationally—over time."
   },
-  aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
   skills : {
     "languages": ["TypeScript", "JavaScript (ES6+)", "Python"],
     "frontend": ["React", "React Native", "Redux", "Tailwind CSS" ],
