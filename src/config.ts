@@ -26,10 +26,10 @@ export const siteConfig = {
   },
   projects: [
     {
-      name: "Smart Ticket Triage AI",
+      name: "Support Ticket Triage AI",
       description:
         "Automatically analyze and triage support tickets with AI-powered intent detection, urgency assessment, and recommended next steps.",
-      link: "",
+      link: "https://ai-support-triage-project.vercel.app/",
       skills: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Python", "FastAPI", "AI/ML (Hugging Face Inference API)"],
     },
   ],
@@ -87,7 +87,7 @@ export const siteConfig = {
   ],
   education: [ {
     school: "LearningFuze",
-    degree: "Accelerated Web Development Programe",
+    degree: "Accelerated Web Development Program",
     dateRange: "Jan 2021 - Apr 2021",
     achievements: [],
   },
