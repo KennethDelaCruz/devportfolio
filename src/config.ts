@@ -20,7 +20,7 @@ export const siteConfig = {
   skills : {
     "languages": ["TypeScript", "JavaScript (ES6+)", "Python"],
     "frontend": ["React", "React Native", "Redux", "Tailwind CSS" ],
-    "backend": ["Node.js", "Express", "PostgreSQL"],
+    "backend": ["Node.js", "Express.js", "FastAPI", "PostgreSQL"],
     "tools": ["Git", "GitHub", "GitHub Actions", "Monorepos"],
     "design": ["Figma", "Notion"]
   },
