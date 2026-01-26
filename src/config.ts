@@ -46,7 +46,7 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Wildfire Systems, Inc. ",
+      company: "Wildfire Systems, Inc.",
       title: "Software Engineer - Internal/Partner Tools Team",
       dateRange: "Jan 2023 - Dec 2024",
       bullets: [
